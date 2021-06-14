@@ -1,0 +1,42 @@
+[
+        {
+                "id": 2321312,
+                "name": "Smartphone Apple iPhone 7 128GB",
+                "images": "https://i.zst.com.br/thumbs/12/1/c/193194634.jpg",
+                "price": {
+                    "value": 3509.10,
+                    "installments": 10,
+                    "installmentValue": 389.90
+                }
+        },
+        {
+                "id": 9971,
+                "name": "Smart TV Samsung Serie 4 UN32J4300AG 32 polegadas LED Plana",
+                "images": "https://images0.kabum.com.br/produtos/fotos/115830/smart-tv-led-32-samsung-2-hdmi-1-usb-wi-fi-hdr-un32t4300agxzd_1596735074_gg.jpg",
+                "price": {
+                    "value": 1139.90,
+                    "installments": 10,
+                    "installmentValue": 134.11
+                }
+        },
+        {
+                "id": 6717131,
+                "name": "Câmera Digital Canon EOS Rebel T5i 18.0 Megapixels",
+                "images": "https://s2.glbimg.com/eaDT9tnFqu9QcWQ8kOLL2te2zbE=/0x0:695x414/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2018/s/4/MD5avWQeejxTAwDzgTZg/0.conheca-pros-e-contras-de-comprar-uma-camera-canon-rebel-t5i-usada.jpg",
+                "price": {
+                    "value": 1999.20,
+                    "installments": 10,
+                    "installmentValue": 235.20
+                }
+         },
+         {
+                "id": 6717131,
+                "name": "Lenovo IdeaPad 310 80UH0004BR Intel Core i7-6500U 2.5 GHz 8192 MB 1024 GB",
+                "images": "https://images-na.ssl-images-amazon.com/images/I/413V3QwQ2sL._AC_.jpg",
+                "price": {
+                    "value": 2599.00,
+                    "installments": 10,
+                    "installmentValue": 259.90
+                }
+            }
+    ]
