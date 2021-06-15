@@ -1,24 +1,79 @@
-.img{
-    height: 300px;
-    width: 300px;
-}
-
-.img_menu1{
-
+.img1, .img2 {
+    width: 250px;
+    height: 250px;
 
 }
-/* Add a black background color to the top navigation */
-.topnav {
+.img3{
+    width: 100px;
+    height: 150px;
+}
+
+.topnav{
+    display: flex;
+    gap: 1430px;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.bg-img {
+  /* The image used */
   background-color: yellow;
-  overflow: hidden;
+  min-height: 10px;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+#button{
+    margin: 20px;
+  	margin-top; 30px;
+  	display: flex;
+    gap: 1430px;
+    padding-top: 30px;
+}
+/* Position the navbar container inside the image */
+.container1 {
+  position: static;
+  text-align: left;
+  margin: 10px;
+  width: auto;
+}
+/* Position the navbar container inside the image */
+.container2 {
+  position: static;
+  text-align: right;
+  margin: 20px;
+  width: auto;
+}
+
+div#produtos_carrinho{
+    background-color: #ffb84d;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.carrinho{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.produtos{
+    display: flex;
+    gap: 40px;
+}
+
+#titulo_carrinho{
+    padding-bottom: 30px;
+}
+
+p{
+    font-family: Helvetica;
+}
+
+.addCarrinho{
+    background-color: green;
+    color: white;
+}
+
+.excluir{
+   background-color: red;
+    color: white;
 }

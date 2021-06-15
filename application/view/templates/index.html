@@ -1,43 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Busca Pé</title>
+        <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
 
-     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
-<body>
+        <div class="bg-img">
+          <div class="container1">
+            <div class="topnav">
+              <img class="img3" src="https://i1.zst.com.br/ais/_next/public/asteroid/buscape/logo-white.svg ">
 
-<header class="menu">
+                <div id="button">
+                <button id="shop">Carrinho</button>
+                </div>
 
-    <
-    <div class="topnav">
-        <img class="img_menu1" src=" https://cdn.discordapp.com/attachments/717158562186657884/853840810528079892/logo-buscape.png ">
-        <button href="carrinho_menu">Carrinho</button>
-    </div>
-
-</header>
-
-<section class="produtos_area">
-
-    <div class="produtos">
-
-        {% for i in lista_produtos %}
-
-        <div class="unidade">
-
-                <p>{{i.get_nome()}}</p>
-                <img class="img" src="{{i.get_imagem()}}">
-                <p>{{i.get_valor</p>
+           </div>
+          </div>
 
         </div>
+    </head>
+    <body>
+    <div id="produtos_carrinho">
+        <div id="titulo_carrinho">
+            <h1>Produtos do carrinho</h1>
+        </div>
+                {% for i in lista_carrinho %}
+                <div class="carrinho">
 
-        {% endfor %}
-    </div>
+                    <div>
+                        <div>
+                        <img class="img2" src="{{i.get_imagem()}}">
+                        </div>
+                        <div>
+                            <b><h2>{{ i.get_nome() }}</h2></b>
+                        <p>{{ i.get_parcela() }}X  R${{ i.get_valorParcela() }}</p>
+                        <p>Ou R${{ i.get_valor() }} a vista</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="{{ url_for('excluir', id=i.get_id()) }}"><button class="excluir" s> X </button> </a>
+                    </div>
+                </div>
+                <hr>
+                {% endfor %}
+            </div>
+        <section class="main2">
 
-</section>
+            <div class="produtos_exibidos">
 
+                {% for x in lista_produtos %}
+                <div class="produtos">
+                    <div>
+                    <img class="img1" src="{{x.get_imagem()}}">
+                    </div>
+                    <div>
+                        <b><h2>{{ x.get_nome() }}</h2></b>
+                        <p id="melhorP">MELHOR PREÇO</p>
+                        <p>{{ x.get_parcela() }}X  R${{ x.get_valorParcela() }}</p>
+                        <p>Ou R${{ x.get_valor() }}a vista</p>
+                        <a href="{{url_for('inserir', id=x.get_id())}}"><button class="addCarrinho">Adicionar ao carrinho</button></a>
+                    </div>
+                </div>
+                <hr>
+                {% endfor %}
 
+            </div>
+        </section>
 
-</body>
+        <script>
+            var status = 0
+            var shop = document.getElementById("shop");
+            shop.addEventListener("click", function() {
+                var pegar_id = document.getElementById("produtos_carrinho", "titulo_carrinho")
+                if (status == 0){
+                    pegar_id.style.display = "block";
+                    status = 1;
+                }else{
+                    pegar_id.style.display = "none";
+                    status = 0;
+                }
+            });
+       </script>
+    </body>
 </html>
