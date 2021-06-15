@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="menu">
+
+    <
+    <div class="topnav">
+        <img class="img_menu1" src=" https://cdn.discordapp.com/attachments/717158562186657884/853840810528079892/logo-buscape.png ">
+        <button href="carrinho_menu">Carrinho</button>
+    </div>
+
+</header>
+
+<section class="produtos_area">
+
+    <div class="produtos">
+
+        {% for i in lista_produtos %}
+
+        <div class="unidade">
+
+                <p>{{i.get_nome()}}</p>
+                <img class="img" src="{{i.get_imagem()}}">
+                <p>{{i.get_valor</p>
+
+        </div>
+
+        {% endfor %}
+    </div>
+
+</section>
+
+
+
+</body>
+</html>
