@@ -6,11 +6,13 @@
 .img3{
     width: 100px;
     height: 150px;
+    margin-left: 10px;
 }
 
 .topnav{
     display: flex;
     gap: 1400px;
+    margin: 10px;
 }
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
@@ -25,14 +27,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
     margin: 20px;
   	margin-top; 30px;
   	display: flex;
-    gap: 1400px;
     padding-top: 30px;
+}
 }
 
 .container1 {
   position: static;
   text-align: left;
-  margin: 10px;
+  margin: 20px;
   width: auto;
 }
 
@@ -82,4 +84,16 @@ footer{
     text-align: center;
 }
 
+#shop{
+  cursor: pointer;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
 
+}
+#shop:hover {
+  background-color: #ffb84d;
+  color: white;
+}
