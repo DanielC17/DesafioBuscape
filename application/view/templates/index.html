@@ -57,7 +57,7 @@
                         <b><h2>{{ x.get_nome() }}</h2></b>
                         <p id="melhorP">MELHOR PREÇO</p>
                         <p>{{ x.get_parcela() }}X  R${{ x.get_valorParcela() }}</p>
-                        <p>Ou R${{ x.get_valor() }}a vista</p>
+                        <p>Ou R${{ x.get_valor() }} a vista</p>
                         <a href="{{url_for('inserir', id=x.get_id())}}"><button class="addCarrinho">Adicionar ao carrinho</button></a>
                     </div>
                 </div>
@@ -82,4 +82,8 @@
             });
        </script>
     </body>
+
+    <footer>
+        <h5> @Daniel Coelho Cabral - 202011112</h5>
+    </footer>
 </html>
